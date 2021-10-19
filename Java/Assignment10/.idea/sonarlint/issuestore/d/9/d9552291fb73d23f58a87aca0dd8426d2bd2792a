@@ -1,0 +1,38 @@
+
+J
+java:S3740	"/Provide the parametrized type for this generic.(È•şÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(ê™Å„üÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(ê™Å„üÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(¦ß«ÿúÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(¦ß«ÿúÿÿÿÿ
+E
+java:S3740"/Provide the parametrized type for this generic.(´â”õ
+E
+java:S3740"/Provide the parametrized type for this generic.(´â”õ
+J
+java:S3740"/Provide the parametrized type for this generic.(¡àÎ•ûÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(Ùœ¿Âÿÿÿÿÿ
+1
+java:S2326"T is not used in the class.(½ú„®
+L
+java:S1854"6Remove this useless assignment to local variable "sl".(´â”õ
+E
+java:S1197"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+;
+java:S2440"%Remove this instantiation of "SList".(´â”õ
+=
+java:S1481"'Remove this unused "sl" local variable.(´â”õ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¨ìÙõ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(‹÷àV
+N	java:S106"9Replace this use of System.out or System.err by a logger.(³€éö
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ãúî±üÿÿÿÿ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(ğ±ÎÙ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(²˜”Ñ
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(­«¶³ùÿÿÿÿ8úß€ÑÆ/
+{
+java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "iterator".(¦ß«ÿúÿÿÿÿ

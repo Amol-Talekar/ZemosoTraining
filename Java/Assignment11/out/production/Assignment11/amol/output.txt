@@ -1,0 +1,15 @@
+  Occurred 5times
+a Occurred 3times
+A Occurred 1times
+e Occurred 3times
+H Occurred 1times
+h Occurred 1times
+i Occurred 1times
+I Occurred 1times
+k Occurred 1times
+l Occurred 2times
+m Occurred 2times
+o Occurred 1times
+r Occurred 2times
+t Occurred 1times
+T Occurred 1times

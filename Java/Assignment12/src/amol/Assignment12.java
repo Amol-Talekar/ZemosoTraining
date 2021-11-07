@@ -3,12 +3,14 @@ package amol;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 class Student
 {
     int field_id,age,year_of_enrollment;
-    double perTillDate;
+    double percentageTillDate;
     String name,engDepartment,gender;
-    Student(int field_id,String name,int age,String gender,String engDepartment,int year_of_enrollment,double perTillDate)
+    Student(int field_id,String name,int age,String gender,String engDepartment,int year_of_enrollment,double percentageTillDate)
     {
         this.field_id = field_id;
         this.name=name;
@@ -16,7 +18,7 @@ class Student
         this.gender=gender;
         this.engDepartment=engDepartment;
         this.year_of_enrollment=year_of_enrollment;
-        this.perTillDate=perTillDate;
+        this.percentageTillDate=percentageTillDate;
 
     }
 }
@@ -41,14 +43,18 @@ public class Assignment12 {
         list.add(new Student(255, "Ali Baig", 17, "Male", "Electronic", 2018, 88.4));
         list.add(new Student(266, "Sanvi Pandey", 17, "Female", "Electric", 2019, 72.4));
         list.add(new Student(277, "Anuj Chettiar", 18, "Male", "Computer Science", 2017, 57.5));
+
+        Stream<Student> liststream= list.stream();
+        System.out.println("type of stream  "+list.stream().getClass().getSimpleName());
+
         // Print the name of all departments in the college
-        List<String> departments=list.stream().map(d->d.engDepartment).collect(Collectors.toList());
-        System.out.println(departments);
+        List<String> departments=liststream.map(d->d.engDepartment).collect(Collectors.toList());
+        System.out.println("first "+departments);
         //Get the names of all students who have enrolled after 2018
         List<String> names=list.stream().filter(y->y.year_of_enrollment > 2018).map(n->n.name).collect(Collectors.toList());
         System.out.println(names);
         //Get the details of all male student in the computer sci department
-        List<Student> students=list.stream().filter(g->g.gender.equals("Male")).filter(d->d.engDepartment.equals("Computer Science")).collect(Collectors.toList());
+        List<Student> students=liststream.filter(g->g.gender.equals("Male")).filter(d->d.engDepartment.equals("Computer Science")).collect(Collectors.toList());
         System.out.println(students.stream().map(n->n.name).collect(Collectors.toList()));
         // How many male and female student are there ?
         Map<String, Long> result = list.stream().map(g->g.gender).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
@@ -57,7 +63,7 @@ public class Assignment12 {
         Map<String, Long> result1 = list.stream().map(d->d.engDepartment).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         System.out.println(result1);
         //the details of highest student having highest percentage
-        Student highestStudent=list.stream().max((student1,student2)->student1.perTillDate>student2.perTillDate?1:-1).get();
+        Student highestStudent=list.stream().max((student1,student2)->student1.percentageTillDate>student2.percentageTillDate?1:-1).get();
         System.out.println(highestStudent.field_id+" "+highestStudent.name);
         //the average age of male and female students
         Map<Object, Double> averageAge = list
@@ -73,7 +79,7 @@ public class Assignment12 {
         Map<Object, Double> averagePercentageEachDepartment = list
                 .stream()
                 .collect(Collectors.groupingBy(student -> student.engDepartment,
-                        Collectors.averagingDouble(student->student.perTillDate)));
+                        Collectors.averagingDouble(student->student.percentageTillDate)));
 
         averagePercentageEachDepartment.forEach(
                 (department,average2) -> System.out.println(department + "\t" + average2)

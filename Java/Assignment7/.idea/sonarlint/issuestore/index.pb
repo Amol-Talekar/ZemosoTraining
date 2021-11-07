@@ -43,3 +43,9 @@ I
 src/amol3/Interface1.java,1/b/1b46770cc311e85c25d81d91fee14962e5a93ed0
 I
 src/amol3/Interface2.java,d/e/dec4bec6f51a756c2d49c35bfa44c97823f9572f
+C
+src/amol1/Test.java,7/0/70ca37460249fbb22827c2c84e33f3b1de281b08
+F
+src/amol1/Hamster.java,e/5/e57056895a24b3e46c125ed80501e194ec8f90b1
+E
+src/amol1/Gerbil.java,6/a/6a5b015624f65282ca9c68f1c0ff3e50c004895b
